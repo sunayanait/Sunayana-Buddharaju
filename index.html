@@ -3,96 +3,178 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>My Website</title>
+
+<title>Buddharaju Sunayana</title>
 
 <style>
-    *{
-        margin:0;
-        padding:0;
-        box-sizing:border-box;
-        font-family: Arial, sans-serif;
-    }
 
-    body{
-        background:#f4f4f4;
-    }
+body{
+    margin:0;
+    font-family:Arial, sans-serif;
+    background:#f2f6fc;
+}
 
-    header{
-        background:#0077cc;
-        color:white;
-        padding:20px;
-        text-align:center;
-    }
+header{
+    background:#1a237e;
+    color:white;
+    text-align:center;
+    padding:30px;
+}
 
-    nav{
-        background:#005fa3;
-        padding:10px;
-        text-align:center;
-    }
+header h1{
+    margin:0;
+}
 
-    nav a{
-        color:white;
-        text-decoration:none;
-        margin:0 15px;
-    }
+.welcome{
+    text-align:center;
+    padding:20px;
+    color:#333;
+}
 
-    .hero{
-        padding:80px 20px;
-        text-align:center;
-        background:white;
-    }
+.course-container{
+    max-width:900px;
+    margin:auto;
+    padding:20px;
+}
 
-    .hero h1{
-        font-size:40px;
-        color:#333;
-    }
+.course-card{
+    background:white;
+    padding:25px;
+    border-radius:12px;
+    box-shadow:0 0 10px rgba(0,0,0,0.1);
+}
 
-    .hero p{
-        margin-top:10px;
-        color:#666;
-    }
+.module{
+    margin-top:25px;
+    padding:15px;
+    background:#eef3ff;
+    border-radius:8px;
+}
 
-    .btn{
-        display:inline-block;
-        margin-top:20px;
-        padding:12px 25px;
-        background:#0077cc;
-        color:white;
-        text-decoration:none;
-        border-radius:5px;
-    }
+.module h3{
+    margin-top:0;
+    color:#1a237e;
+}
 
-    footer{
-        background:#222;
-        color:white;
-        text-align:center;
-        padding:15px;
-        margin-top:50px;
-    }
+input[type=file]{
+    margin-top:10px;
+}
+
+.upload-btn{
+    margin-top:10px;
+    padding:10px 20px;
+    background:#3949ab;
+    color:white;
+    border:none;
+    border-radius:5px;
+    cursor:pointer;
+}
+
+.upload-btn:hover{
+    background:#283593;
+}
+
+footer{
+    margin-top:30px;
+    text-align:center;
+    background:#1a237e;
+    color:white;
+    padding:15px;
+}
+
 </style>
 </head>
 
 <body>
 
 <header>
-    <h1>My New Website</h1>
+    <h1>Buddharaju Sunayana</h1>
 </header>
 
-<nav>
-    <a href="#">Home</a>
-    <a href="#">About</a>
-    <a href="#">Services</a>
-    <a href="#">Contact</a>
-</nav>
+<div class="welcome">
+    <h2>Welcome to my courses</h2>
+</div>
 
-<section class="hero">
-    <h1>Welcome to My Website</h1>
-    <p>Create something amazing with HTML and CSS.</p>
-    <a class="btn" href="#">Get Started</a>
-</section>
+<div class="course-container">
+
+<div class="course-card">
+
+<h2>Course: Quantum Computing</h2>
+
+<!-- Notes -->
+<div class="module">
+<h3>Notes</h3>
+
+<input
+type="file"
+accept=".pdf,.doc,.docx"
+multiple>
+
+<br>
+
+<button class="upload-btn">
+Upload Notes
+</button>
+
+</div>
+
+<!-- Assignments -->
+<div class="module">
+<h3>Assignments</h3>
+
+<input
+type="file"
+accept=".pdf,.doc,.docx"
+multiple>
+
+<br>
+
+<button class="upload-btn">
+Upload Assignments
+</button>
+
+</div>
+
+<!-- Pedagogy -->
+<div class="module">
+<h3>Pedagogy</h3>
+
+<input
+type="file"
+accept=".pdf,.doc,.docx"
+multiple>
+
+<br>
+
+<button class="upload-btn">
+Upload Pedagogy Files
+</button>
+
+</div>
+
+<!-- Assessments -->
+<div class="module">
+<h3>Assessments</h3>
+
+<input
+type="file"
+accept=".pdf,.doc,.docx"
+multiple>
+
+<br>
+
+<button class="upload-btn">
+Upload Assessments
+</button>
+
+</div>
+
+</div>
+
+</div>
 
 <footer>
-    <p>© 2026 My Website | All Rights Reserved</p>
+© 2026 Buddharaju Sunayana | Quantum Computing Course Portal
 </footer>
 
 </body>
