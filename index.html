@@ -22,6 +22,13 @@ MathJax = {
 *{box-sizing:border-box;margin:0;padding:0}
 body{background:var(--bg);color:var(--text);font-family:'Segoe UI',system-ui,sans-serif;display:flex;min-height:100vh;font-size:15px}
 
+/* ─── Site Heading ─── */
+#site-heading{background:linear-gradient(135deg,#1d5fa4,#6d28d9);text-align:center;padding:14px 20px;box-shadow:0 2px 8px rgba(0,0,0,.12)}
+#site-heading-inner{display:inline-block}
+#site-heading-inst{color:rgba(255,255,255,.85);font-size:.8rem;margin-bottom:2px}
+#site-heading-sub{color:rgba(255,255,255,.75);font-size:.75rem;letter-spacing:.04em;margin-bottom:4px}
+#site-heading-title{color:#fff;font-size:1.2rem;font-weight:700;letter-spacing:.02em}
+
 /* ─── Sidebar ─── */
 #sidebar{width:var(--sidebar-w);min-width:var(--sidebar-w);background:var(--surface);border-right:1px solid var(--border);display:flex;flex-direction:column;position:sticky;top:0;height:100vh;overflow-y:auto;box-shadow:2px 0 8px rgba(0,0,0,.07)}
 .sb-header{padding:16px 18px;background:linear-gradient(135deg,#1d5fa4,#6d28d9);color:#fff}
@@ -202,23 +209,18 @@ body{background:var(--bg);color:var(--text);font-family:'Segoe UI',system-ui,san
 </head>
 <body>
 <div id="sidebar">
-  <div class="sb-header">
-    <div class="inst">👩‍🏫 Dr. Buddharaju Sunayana</div>
-    <div class="course">23PY3103 · 3 Credits · ANITS</div>
-    <div class="title">⚛ Fundamentals of Quantum Computing</div>
-  </div>
   <div class="sb-nav">
     <div class="nav-home active" id="nav_home" onclick="showPage('home')">🏠 Home &amp; Introduction</div><div class="unit-header">Unit I: Fundamentals of Quantum Mechanics</div><div class="nav-topic" id="nav_u1t1" onclick="showPage('u1t1')">1.1 Wave Function & Schrödinger Equation</div><div class="nav-topic" id="nav_u1t2" onclick="showPage('u1t2')">1.2 Why Quantum Computing</div><div class="nav-topic" id="nav_u1t3" onclick="showPage('u1t3')">1.3 Qubits vs. Classical Bits</div><div class="nav-topic" id="nav_u1t4" onclick="showPage('u1t4')">1.4 Mathematical Preliminaries</div><div class="unit-header">Unit II: Single Qubit Quantum Systems</div><div class="nav-topic" id="nav_u2t1" onclick="showPage('u2t1')">2.1 Qubit States and Representation</div><div class="nav-topic" id="nav_u2t2" onclick="showPage('u2t2')">2.2 Single-Qubit Measurement & Operations</div><div class="unit-header">Unit III: Multiple Qubit Systems and Entanglement</div><div class="nav-topic" id="nav_u3t1" onclick="showPage('u3t1')">3.1 Two-Qubit Systems</div><div class="nav-topic" id="nav_u3t2" onclick="showPage('u3t2')">3.2 Entangled States</div><div class="nav-special assign" id="nav_assign1" onclick="showPage('assign1')">📝 Assignment 1</div><div class="unit-header">Unit IV: Measurement and Bell's Theorem</div><div class="nav-topic" id="nav_u4t1" onclick="showPage('u4t1')">4.1 Quantum Measurement Formalism</div><div class="nav-topic" id="nav_u4t2" onclick="showPage('u4t2')">4.2 Quantum Non-locality and Bell's Theorem</div><div class="unit-header">Unit V: Quantum Circuits and Applications</div><div class="nav-topic" id="nav_u5t1" onclick="showPage('u5t1')">5.1 Introduction to Quantum Circuits</div><div class="nav-topic" id="nav_u5t2" onclick="showPage('u5t2')">5.2 Multi-Qubit Gate Operations</div><div class="nav-topic" id="nav_u5t3" onclick="showPage('u5t3')">5.3 Applications</div><div class="nav-special assign" id="nav_assign2" onclick="showPage('assign2')">📝 Assignment 2</div><div class="nav-special case" id="nav_case" onclick="showPage('case')">🔬 Case Study</div>
   </div>
   <div class="sb-footer">5 Units · 50 Lectures · Sessional 40 + End Exam 60</div>
 </div>
 <div id="main">
-  <div id="topbar">
-    <span>📦 Downloads:</span>
-    <a class="tb-btn" href="Fundamentals of Quantum Computing .pdf" download>📄 Syllabus PDF</a>
-    <a class="tb-btn" href="quantum_unit1_notes.pdf" download>📝 Unit I Notes</a>
-    <a class="tb-btn" href="quantum_unit1_presentation.pptx" download>📊 Unit I PPT</a>
-    <a class="tb-btn" href="quantum_unit1_podcast.html" target="_blank">🎧 Unit I Podcast</a>
+  <div id="site-heading">
+    <div id="site-heading-inner">
+      <div id="site-heading-inst">👩‍🏫 Buddharaju Sunayana</div>
+      <div id="site-heading-sub">23PY3103 · 3 Credits · ANITS</div>
+      <div id="site-heading-title">⚛ Fundamentals of Quantum Computing</div>
+    </div>
   </div>
   <div class="content-scroll">
     
@@ -237,8 +239,8 @@ body{background:var(--bg);color:var(--text);font-family:'Segoe UI',system-ui,san
       <div style="width:48px;height:48px;border-radius:12px;background:linear-gradient(135deg,#1d5fa4,#6d28d9);display:flex;align-items:center;justify-content:center;font-size:1.4rem;color:#fff">👩‍🏫</div>
       <div>
         <div style="font-weight:700;color:var(--text);font-size:1rem">Instructor</div>
-        <div style="color:var(--accent2);font-size:.95rem;font-weight:600">Dr. Buddharaju Sunayana</div>
-        <div style="color:var(--muted);font-size:.78rem">Department of Physics · ANITS</div>
+        <div style="color:var(--accent2);font-size:.95rem;font-weight:600">Buddharaju Sunayana</div>
+        <div style="color:var(--muted);font-size:.78rem">Department of Information Technology · ANITS</div>
       </div>
     </div>
     <div style="display:grid;grid-template-columns:repeat(auto-fill,minmax(160px,1fr));gap:10px;font-size:.82rem">
@@ -2431,7 +2433,7 @@ updateBellSim();
 <h2>📝 Assignment 1 <span style="font-size:.9rem;color:var(--muted);font-weight:400">· After Units I–III</span></h2>
 <div style="background:#fffbeb;border:1px solid #fde68a;border-radius:10px;padding:14px;margin-bottom:18px;font-size:.85rem;color:#78350f">
 <b>Instructions:</b> Attempt all 5 questions. Answers must demonstrate understanding of quantum mechanics, qubit representation, and entanglement. Show all mathematical workings. Submit handwritten or typed (LaTeX preferred).
-<br><b>Max Marks:</b> 50 &nbsp;|&nbsp; <b>Time Allowed:</b> 3 hours (take-home) &nbsp;|&nbsp; <b>Instructor:</b> Dr. Buddharaju Sunayana
+<br><b>Max Marks:</b> 50 &nbsp;|&nbsp; <b>Time Allowed:</b> 3 hours (take-home) &nbsp;|&nbsp; <b>Instructor:</b> Buddharaju Sunayana
 </div>
 
 <div class="assign-q"><h4>Q1. [10 marks] Wave Function and Probability (Unit I)</h4>
@@ -2477,7 +2479,7 @@ updateBellSim();
 <h2>📝 Assignment 2 <span style="font-size:.9rem;color:var(--muted);font-weight:400">· After Units IV–V</span></h2>
 <div style="background:#fffbeb;border:1px solid #fde68a;border-radius:10px;padding:14px;margin-bottom:18px;font-size:.85rem;color:#78350f">
 <b>Instructions:</b> Attempt all 5 questions. Questions cover measurement formalism, Bell's theorem, quantum circuits, and applications. Show all mathematical derivations. Diagrams must be neat and labelled.
-<br><b>Max Marks:</b> 50 &nbsp;|&nbsp; <b>Time Allowed:</b> 3 hours (take-home) &nbsp;|&nbsp; <b>Instructor:</b> Dr. Buddharaju Sunayana
+<br><b>Max Marks:</b> 50 &nbsp;|&nbsp; <b>Time Allowed:</b> 3 hours (take-home) &nbsp;|&nbsp; <b>Instructor:</b> Buddharaju Sunayana
 </div>
 
 <div class="assign-q"><h4>Q1. [10 marks] Projection Operators and Measurement (Unit IV)</h4>
@@ -2516,7 +2518,7 @@ updateBellSim();
 </div></div>
 <div class="page" id="pg_case">
 <h2 style="color:var(--accent3);margin-bottom:6px;font-size:1.35rem">🔬 Case Study: Quantum-Secured Banking Network</h2>
-<p style="color:var(--muted);font-size:.85rem;margin-bottom:20px">A Pedagogical Case Study covering the complete syllabus of 23PY3103 · Instructor: Dr. Buddharaju Sunayana</p>
+<p style="color:var(--muted);font-size:.85rem;margin-bottom:20px">A Pedagogical Case Study covering the complete syllabus of 23PY3103 · Instructor: Buddharaju Sunayana</p>
 
 <div class="cs-section">
 <h3>📌 Background & Problem Statement</h3>
